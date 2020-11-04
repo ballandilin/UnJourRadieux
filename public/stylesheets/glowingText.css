@@ -1,0 +1,24 @@
+
+@font-face {
+	font-family: apo;
+	src: url(/public/fonts/scorched-earth-font/Scorchedearth-4Ljp.otf);
+}
+
+.glow {
+    font-family: apo;
+    font-size: 5vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #00e61f, 0 0 40px #00e645, 0 0 50px #00e61f, 0 0 60px #00e613, 0 0 70px #00e61f;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #0cdd39, 0 0 40px #4dff82, 0 0 50px #14c50e, 0 0 60px #04db45, 0 0 70px #4dff82, 0 0 80px #4dffac;
+    }
+  }

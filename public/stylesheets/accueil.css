@@ -14,6 +14,8 @@
     background-color: #021027;
   }
 
+  /************** Grille CSS************************/
+
   .gridTitle {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,6 +30,44 @@
     margin: auto 0;
   }
   .sSign { grid-area: SSign; }
+
+.gridMenu {
+    margin: 5vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 15vw;
+    grid-template-areas:
+      "bt1 bt2 bt3 bt4";
+  }
+
+.gridMenu a {
+  font-size: 1em;
+  padding: 10px;
+  color: rgb(44, 44, 44);
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: dimgray;
+}
+
+.button1 { grid-area: bt1; }
+.button2 { 
+    grid-area: bt2;
+  }
+.button3 { grid-area: bt3; }
+.button4 { grid-area: bt4; }
+
+
+.prez p{
+  color: aliceblue;
+}
+
+
+
 
   
   .container {

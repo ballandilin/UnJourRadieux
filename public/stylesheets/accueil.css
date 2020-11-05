@@ -77,7 +77,7 @@
 
 .gridMenu a:hover {
   text-shadow: 0 0 20px #fff, 0 0 30px #0cdd39, 0 0 40px #39ce0c, 0 0 50px #0ee007, 0 0 40px #16db04, 0 0 500px #00ff0d, 0 0 60px #06df23;
-  color: #60fa19;
+  color: #c2f5aa;
 }
 
 .button1 { grid-area: bt1; }
@@ -88,10 +88,23 @@
 .button4 { grid-area: bt4; }
 
 
+.back {
+  -webkit-box-shadow: 0px 0px 30px 18px #2AFF10; 
+  box-shadow: 0px 0px 30px 18px #2AFF10;
+
+}
+
 .prez{
   text-align: center;
   color: aliceblue;
   font-size: 2vw;
+  border: 2px solid #06D85F;
+  border-left: none;
+  border-right: none;
+  padding: 2vw;
+  margin: 10vw;
+  opacity: 1;
+  background-color: rgba(85, 85, 81, 0.432);
 }
 
 

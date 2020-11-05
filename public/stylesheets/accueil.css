@@ -104,11 +104,32 @@
   border-right: none;
   padding: 2vw;
   margin: 10vw;
-  opacity: 1;
+
   background-color: rgba(85, 85, 81, 0.432);
 }
 
+.contmap {
+  margin: 10vw;
+}
 
+
+.map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0vw 0vw;
+  grid-template-areas:
+    "doc map";
+  background-color: rgba(85, 85, 81, 0.432);
+}
+
+.gmap {
+  grid-area: gmap; 
+}
+.doc { 
+  grid-area: doc;
+  text-align: center;
+}
 
   
   .container {
@@ -128,9 +149,10 @@
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 0%;
     -webkit-mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
             mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
+    background-color: transparent;
   }
   
   .circle-container {

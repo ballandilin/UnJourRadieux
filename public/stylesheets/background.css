@@ -1,18 +1,23 @@
-body, html {
+/* body, html {
     height: 100%;
   }
   
 .mainPara {
-    /* The image used */
+
     background-image: url("../images/back.jpg");
   
-    /* Full height */
+
     height: 100%;
   
-    /* Create the parallax scrolling effect */
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
 
+
+.test {
+    background-color: lawngreen;
+    width: 100%;
+}

@@ -13,6 +13,22 @@
   body {
     background-color: #021027;
   }
+
+  .gridTitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "firstSign text SSign";
+  }
+  .fSign { grid-area: firstSign; }
+  .titre { 
+    grid-area: text;
+    margin: auto 0;
+  }
+  .sSign { grid-area: SSign; }
+
   
   .container {
     width: 100%;

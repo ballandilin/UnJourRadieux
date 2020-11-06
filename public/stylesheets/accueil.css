@@ -30,7 +30,9 @@
     position:relative;     /* <<< this */
   }
   
-
+.header {
+  margin-bottom: 5vw;
+}
 
   /************** Grille CSS************************/
 

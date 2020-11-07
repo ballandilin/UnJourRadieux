@@ -27,12 +27,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;     /* <<< this */
+    /* position:relative;  */
   }
   
-.header {
+/* .header {
   margin-bottom: 5vw;
-}
+} */
 
   /************** Grille CSS************************/
 
@@ -119,17 +119,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr;
-  gap: 0vw 0vw;
+  gap: 0px 0px;
   grid-template-areas:
-    "doc map";
+    "doc gmap";
   background-color: rgba(85, 85, 81, 0.432);
+  border: 2px solid #06D85F;
+  border-left: none;
+  border-right: none;
+  padding: .5vw;
 }
 
 .gmap {
-  grid-area: gmap; 
+  grid-area: gmap;
+  border-radius: 50%;
 }
 .doc { 
   grid-area: doc;
+  font-size: 2vw;
+  color: aliceblue;
   text-align: center;
 }
 
@@ -137,7 +144,6 @@
   .container {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     position: relative;
 
   }
@@ -145,7 +151,6 @@
   .background {
     display: block;
     position: absolute;
-    overflow: hidden;
     top: 0;
     left: 0;
     -o-object-fit: cover;
@@ -159,7 +164,6 @@
   
   .circle-container {
     position: absolute;
-    overflow: hidden;
     -webkit-transform: translateY(-10vh);
             transform: translateY(-10vh);
     -webkit-animation-iteration-count: infinite;
